@@ -4,10 +4,12 @@
 
 Extraemos el codigo duplicado a un único método "nuevaPosiciónJugador", el que llamamos desde ambos sitios.
 
-Creamos test unitarios "si_al_principio_saco_un_1_voy_a_casilla_1"
-## Problema 2 
+Creamos test unitarios "si_al_principio_saco_un_1_voy_a_casilla_1".
+## Problema 1
+Vemos si se podria tener menos de 2 jugadores. Y al comprobarlo esta correcto.
 
-Para que haya solo 6 jugadores como mucho tendríamos que añadir en esJugable(), un cuantosJugadores() <= 6
+## Problema 2 
+Para que haya solo 6 jugadores como mucho tendríamos que añadir en esJugable(), un cuantosJugadores() <= 6.
 
 ## Problema 3
 hay que añadir a fueRespuestaCorrecta() un enCasillaCastigo[jugadorActual] = false; y de esta forma conseguiríamos que saliese de la carcel.
