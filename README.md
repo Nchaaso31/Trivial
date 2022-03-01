@@ -16,3 +16,6 @@ hay que añadir a fueRespuestaCorrecta() un enCasillaCastigo[jugadorActual] = fa
 
 ## Problema 4
 habría que invertir el noGanador y cambiarlo a Ganador = true, de esta forma acabaría el juego.
+
+## Problema 5
+tendríamos que reemplazar el codigo del jugador que se repite en respuestaIncorrecta() respuestaCorrecta() por un único método común  
