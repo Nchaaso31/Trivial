@@ -18,4 +18,7 @@ hay que añadir a fueRespuestaCorrecta() un enCasillaCastigo[jugadorActual] = fa
 habría que invertir el noGanador y cambiarlo a Ganador = true, de esta forma acabaría el juego.
 
 ## Problema 5
-tendríamos que reemplazar el codigo del jugador que se repite en respuestaIncorrecta() respuestaCorrecta() por un único método común  
+tendríamos que reemplazar el codigo del jugador que se repite en respuestaIncorrecta() respuestaCorrecta() por un único método común  al que hemos llamado siguiente();
+
+## Problema 6
+Hemos refactorizado las partes que se repetían en fueRespuestaCorrecta(); y a esas partes las hemos llamado isGanador(); 
