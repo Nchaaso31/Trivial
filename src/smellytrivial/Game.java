@@ -2,6 +2,8 @@ package smellytrivial;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
+import java.util.Random;
+import java.util.Scanner;
 
 public class Game {
     ArrayList jugadores = new ArrayList();
@@ -91,14 +93,18 @@ public class Game {
     }
 
     private void hacerPregunta() {
+        Scanner sc = new Scanner(System.in);
+        Random r = new Random();
+
+
         if (categoriaActual() == "Cultura popular")
-            System.out.println(preguntasCultura.removeFirst());
+            System.out.println(preguntasCultura.get(r.nextInt(50)));
         if (categoriaActual() == "Ciencias")
-            System.out.println(preguntasCiencias.removeFirst());
+            System.out.println(preguntasCiencias.get(r.nextInt(50)));
         if (categoriaActual() == "Deportes")
-            System.out.println(preguntasDeportes.removeFirst());
+            System.out.println(preguntasDeportes.get(r.nextInt(50)));
         if (categoriaActual() == "Música")
-            System.out.println(preguntasMusica.removeFirst());
+            System.out.println(preguntasMusica.get(r.nextInt(50)));
     }
 
 
