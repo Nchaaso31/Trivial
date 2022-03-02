@@ -12,7 +12,7 @@ Vemos si se podria tener menos de 2 jugadores. Y al comprobarlo esta correcto.
 Para que haya solo 6 jugadores como mucho tendríamos que añadir en esJugable(), un cuantosJugadores() <= 6.
 
 ## Problema 3
-hay que añadir a fueRespuestaCorrecta() un enCasillaCastigo[jugadorActual] = false; y de esta forma conseguiríamos que saliese de la carcel.
+hay que añadir a fueRespuestaCorrecta() un enCasillaCastigo[jugadorActual] = false; y de esta forma conseguiríamos que saliese de la carcel. Estee metodo lo hemos refactorizado y lo hemos llamado isGanador().
 
 ## Problema 4
 habría que invertir el noGanador y cambiarlo a Ganador = true, de esta forma acabaría el juego.
@@ -22,3 +22,6 @@ tendríamos que reemplazar el codigo del jugador que se repite en respuestaIncor
 
 ## Problema 6
 Hemos refactorizado las partes que se repetían en fueRespuestaCorrecta(); y a esas partes las hemos llamado isGanador(); 
+
+## Problema 7
+Hemos hecho un random y hemos quitado el remove, de esta forma dentro del random incluímos el total de preguntas que se pueden realizar 
